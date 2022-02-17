@@ -9,7 +9,12 @@ module.exports = {
   theme: {
     fontFamily: {
       'pixel-1': ['"VT323"'],
-      'pixel-2': ['"Press Start 2P"']
+      'pixel-2': ['"Press Start 2P"'],
+      'jetbrains': ['"JetBrains Mono"'],
+      'roboto': ['"Roboto Mono"'],
+      'space': ['"Space Mono"'],
+      'ibm-mono': ['"IBM Plex Mono"'],
+      'ibm-sans': ['"IBM Plex Sans"']
     },
     extend: {
       colors: {

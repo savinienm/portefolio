@@ -1,1 +1,65 @@
-<p>navbar works!</p>
+<div class="py-6 font-jetbrains text-gray-600 bg-white">
+  <nav class="fixed z-30 w-screen top-0 shadow-2xl text-gray-600 bg-white">
+    <div class="flex px-4 py-2 items-center">
+      <div class="flex-shrink-0 items-center">
+        <div class="mb-2 sm:mb-0 flex flex-row">
+          <div>
+            <a href="/accueil" class="text-2xl no-underline">Savinien MONTEIL</a><br>
+            <span class="text-xs">Développeur web fullstack</span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:inline flex-grow items-center justify-center">
+        <div class="flex h-full justify-end self-center">
+          <ul class="flex text-lg md:text-xl justify-end items-center">
+            <li class="mx-4 group">
+              <a href="/accueil" class="group-hover:animate-bounce text-md">Accueil</a>
+            </li>
+            <li class="mx-4 px-2">
+              <a href="/parcours" class="text-md">Parcours</a>
+            </li>
+            <li class="mx-4 px-2">
+              <a href="/portfolio" class="text-md">Portfolio</a>
+            </li>
+            <li class="mx-4 px-2">
+              <a href="/contact" class="text-md">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="-mr-2 flex flex-grow justify-end lg:hidden">
+        <button (click)="toggleHamburger()" class="
+              inline-flex items-center justify-center p-2 rounded-md
+              hover:text-gray-900 focus:outline-none
+              focus:text-gray-900 active:text-gray-900
+              ">
+          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <path [ngClass]="{'hidden': hamburgerOpen, 'inline-flex': !hamburgerOpen }" class="inline-flex"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path [ngClass]="{'hidden': !hamburgerOpen, 'inline-flex': hamburgerOpen }" class="hidden"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div [hidden]="!hamburgerOpen" class="pb-2">
+      <ul class="text-lg md:text-xl">
+        <li class="mx-2 py-2">
+          <a href="/accueil" class="text-md no-underline hover:text-gray-900 ml-2 px-1 focus:outline-none focus:text-gray-900">Accueil</a>
+        </li>
+        <li class="mx-2 py-2">
+          <a href="/parcours"
+            class="text-md no-underline hover:text-gray-900 ml-2 px-1 focus:outline-none focus:text-gray-900">Parcours</a>
+        </li>
+        <li class="mx-2 py-2">
+          <a href="/portfolio"
+            class="text-md no-underline hover:text-gray-900 ml-2 px-1 focus:outline-none focus:text-gray-900">Portfolio</a>
+        </li>
+        <li class="mx-2 py-2">
+          <a href="/contact"
+            class="text-md no-underline hover:text-gray-900 ml-2 px-1 focus:outline-none focus:text-gray-900">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

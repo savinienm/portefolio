@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PROJECTS } from 'src/assets/datas/projects';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
+  projects = PROJECTS;
   constructor() { }
 
   ngOnInit(): void {
